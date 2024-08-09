@@ -6,18 +6,18 @@ import "bootstrap/dist/js/bootstrap";
 /*
     Wait for the webview to load Blazor Framework and start it if needed
 */
-if(window.hasOwnProperty("DotNet")) {
-    try {
-        await new Promise(r => setTimeout(r, 100));
+if (window.hasOwnProperty("DotNet")) {
+    new Promise(r => setTimeout(r, 100)).then(() => {
+      try {
         window.DotNet.invokeMethod("", "");
-    }
-    catch(error: any) {
-        if(error.message.includes("No call dispatcher")){
-            window.Blazor.start();
+      }
+      catch (error: any) {
+        if (error.message.includes("No call dispatcher")) {
+          window.Blazor.start();
         }
-    }
+      }
+    });
 }
-
 ReactDOM.createRoot(document.getElementById("app") as HTMLElement).render(
     <React.StrictMode>
       <App />
