@@ -63,18 +63,21 @@ Optional:
 
   ```bash
   cd BlazorMaui.Core
+  dotnet build -f net8.0-windows10.0.19041.0
   dotnet build -t:Run -f net8.0-windows10.0.19041.0
   ```
 - **Linux:**
 
   ```bash
   cd BlazorMaui.Core
+  dotnet build -f net8.0
   dotnet build -t:Run -f net8.0
   ```
 - **macOS:**
 
   ```bash
   cd BlazorMaui.Core
+  dotnet build -f net8.0-maccatalyst
   dotnet build -t:Run -f net8.0-maccatalyst
   ```
 - **Android:**
