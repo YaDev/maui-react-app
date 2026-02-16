@@ -5,9 +5,15 @@ namespace BlazorMaui.Core
 {
     public class App : Application
     {
+        private readonly WebViewContainer webViewContainer;
         public App(WebViewContainer container)
         {
-            MainPage = container;
+            webViewContainer = container;
+        }
+
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(webViewContainer);
         }
 
         [JSInvokable]

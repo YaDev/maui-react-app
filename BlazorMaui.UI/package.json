@@ -11,17 +11,17 @@
     },
     "dependencies": {
         "@popperjs/core": "^2.11.8",
-        "bootstrap": "^5.3.3",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "bootstrap": "^5.3.8",
+        "react": "^19.2.4",
+        "react-dom": "^19.2.4"
     },
     "devDependencies": {
-        "@types/react": "^19.0.8",
-        "@types/react-dom": "^19.0.3",
-        "@vitejs/plugin-vue": "^5.2.1",
-        "sass": "^1.84.0",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-vue": "^6.0.4",
+        "sass": "^1.97.3",
         "ts-node": "^10.9.2",
-        "typescript": "^5.7.3",
-        "vite": "^6.1.0"
+        "typescript": "^5.9.3",
+        "vite": "^7.3.1"
     }
 }
