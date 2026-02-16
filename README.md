@@ -18,19 +18,19 @@ This project is designed to help you quickly build a hybrid app for Windows, Lin
 
 Ensure you have the following installed:
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
 - [.NET MAUI](https://github.com/dotnet/docs-maui/blob/main/docs/get-started/installation.md)
 - [XCode (Mac Only)](https://xcodereleases.com/)
 - GTK+ gtk+-3.0(libgtk-3-0) and webkit2gtk-4 (libwebkit2gtk-4.0) (**Linux Only**)
 - [Android SDK (For Android Build)](https://developer.android.com/)
 - [Node.js and npm](https://nodejs.org/)
 - [VSCode](https://code.visualstudio.com/)
-- [VSCode .NET MAUI extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
+- [VSCode C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+- [VSCode .NET Meteor extension](https://marketplace.visualstudio.com/items?itemName=nromanov.dotnet-meteor)
 
 Optional:
-- [VSCode .NET Meteor extension (Alternative for the official MAUI extension)](https://marketplace.visualstudio.com/items?itemName=nromanov.dotnet-meteor)
 - [VSCode Android WebView Debugging extension](https://marketplace.visualstudio.com/items?itemName=mpotthoff.vscode-android-webview-debug)
-
+- [VSCode .NET MAUI extension (an alternative for .NET Meteor)](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
 
 ### Installation
 
@@ -57,40 +57,40 @@ Optional:
 
 ### Building the Project
 
-**Build the project using VSCode .NET MAUI or .NET Meteor extensions** or build it manually, using the following commands:
+**Build the project using VSCode .NET Meteor, .NET MAUI extensions** or build it manually, using the following commands:
 
 - **Windows:**
 
   ```bash
   cd BlazorMaui.Core
-  dotnet build -f net8.0-windows10.0.19041.0
-  dotnet build -t:Run -f net8.0-windows10.0.19041.0
+  dotnet build -f net10.0-windows10.0.19041.0
+  dotnet build -t:Run -f net10.0-windows10.0.19041.0
   ```
 - **Linux:**
 
   ```bash
   cd BlazorMaui.Core
-  dotnet build -f net8.0
-  dotnet build -t:Run -f net8.0
+  dotnet build -f net10.0
+  dotnet build -t:Run -f net10.0
   ```
 - **macOS:**
 
   ```bash
   cd BlazorMaui.Core
-  dotnet build -f net8.0-maccatalyst
-  dotnet build -t:Run -f net8.0-maccatalyst
+  dotnet build -f net10.0-maccatalyst
+  dotnet build -t:Run -f net10.0-maccatalyst
   ```
 - **Android:**
 
   ```bash
   cd BlazorMaui.Core
-  dotnet build -t:Run -f net8.0-android
+  dotnet build -t:Run -f net10.0-android
   ```
 - **iOS:**
 
   ```bash
   cd BlazorMaui.Core
-  dotnet build -t:Run -f net8.0-ios
+  dotnet build -t:Run -f net10.0-ios
   ```
 
 ## Related projects
