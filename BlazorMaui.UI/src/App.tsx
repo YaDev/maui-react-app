@@ -11,7 +11,7 @@ const App = () => {
                 console.log("Calling GetSystemInfo");
                 window.DotNet.invokeMethodAsync("BlazorMaui.Core", "GetSystemInfo").then((out: any) => {
                     console.log("Got System Info");
-                    if (typeof out != undefined) {
+                    if (typeof out != "undefined") {
                         setSystemInfo(out);
                     }
                 });

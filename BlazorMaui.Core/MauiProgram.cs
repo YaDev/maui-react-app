@@ -7,8 +7,6 @@ namespace BlazorMaui.Core
     {
         public static MauiApp CreateMauiApp()
         {
-            // Enable Remote Debugging (Chrome Remote Debugger)
-            Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--remote-debugging-port=5999");
 
             var builder = MauiApp.CreateBuilder();
             builder
@@ -22,6 +20,8 @@ namespace BlazorMaui.Core
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
+            // Enable Remote Debugging (Chrome Remote Debugger)
+            Environment.SetEnvironmentVariable("WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS", "--remote-debugging-port=5999");
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
